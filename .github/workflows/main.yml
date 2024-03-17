@@ -35,8 +35,8 @@ jobs:
         run: dotnet workload install wasm-tools
 
       - name: Restore Dependencies
-        run: dotnet restore
-        working-directory: ./blazor-wasm-imc-pwa/src/Imc.csproj
+        run: dotnet restore ./src/Imc.csproj
+         
 
       - name: Build
         run: dotnet build -c Release --no-restore
