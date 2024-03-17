@@ -36,7 +36,7 @@ jobs:
 
       - name: Restore Dependencies
         run: dotnet restore
-        working-directory: ./blazor-wasm-imc-pwa/src
+        working-directory: ./
 
       - name: Build
         run: dotnet build -c Release --no-restore
